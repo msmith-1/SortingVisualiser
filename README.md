@@ -1,1 +1,2 @@
-"# SortingVisualiser" 
+Graphical visualisation for sorting algorithms
+
