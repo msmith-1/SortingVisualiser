@@ -1,7 +1,6 @@
 import random
 import matplotlib.pyplot as plt
 
-
 x = [*range(1,11)]
 values = [*range(1,11)]
 random.shuffle(values)
@@ -17,23 +16,10 @@ def insertion(list):
             buffer = list[j]
             list[j] = list[j-1]
             list[j-1] = buffer
+            plt.bar(x, list)
+            plt.show()
             j = j-1
         i = i + 1
     return list
 
 sorted = insertion(values)
-
-plt.bar(x, sorted)
-plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
